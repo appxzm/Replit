@@ -22,7 +22,7 @@
 </style>
 
 <h1>Hello!</h1>
-<p class="testTest">My name is Mazzaella</p>
+<p class="testTest">Mazzaella</p>
 <div class="testClass"><img src="mark.png">
   <img src="mark.png">
   <img src="noctice2.png">
@@ -32,3 +32,37 @@
       I do like this font though.</p>
   </div>
 </div>
+
+<div>
+  <p>
+    Wow I can code on mg phone. This is crazy. Can't remember how to connect javascript.
+  </p>
+  <form onsubmit="changeInput()">
+    <input id="inputTest" type="text" value="help">
+    <button id="btnTest" type="submit">Submit</button>ugh almost working
+  </form>
+</div>
+<div><input type="text" id="in">
+  <div class="out"></div>
+  <div class="out"></div>
+  <div class="out"></div>
+</div>
+<div>
+  <p>Okay I got the thing working. Thanks StackOverflow. Now I can't scroll. <br>Update: the button works, when I click
+    it it somehow reloads the page and the images load.????</p>
+</div>
+
+<script>
+  const input = document.getElementById('in');
+  const divs = document.querySelectorAll('.out');
+
+  input.onkeyup = function () {
+    divs.forEach(function (div) {
+      div.innerHTML = input.value;
+    });
+  }
+
+  function changeInput() {
+    document.getElementById('inputTest').value = 'Btn Wrkd';
+  }
+</script>
